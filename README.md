@@ -2,11 +2,11 @@
 
 A collection of machine learning regression projects designed to practice and master various regression techniques and methods.
 
-## 📚 Overview
+## Overview
 
 This repository contains beginner to intermediate regression projects, each focusing on different aspects of regression analysis, feature engineering, and model evaluation.
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 - Master fundamental regression algorithms (Linear, Polynomial, Ridge, Lasso, Elastic Net)
 - Learn feature engineering and data preprocessing techniques
@@ -15,7 +15,7 @@ This repository contains beginner to intermediate regression projects, each focu
 - Implement regularization techniques to prevent overfitting
 - Gain hands-on experience with scikit-learn and pandas
 
-## 📁 Project Structure
+## Repository Structure
 
 ```
 ml-regression-projects/
@@ -24,54 +24,60 @@ ml-regression-projects/
 ├── house-price-prediction/
 │   ├── README.md
 │   ├── data/
-│   │   ├── raw/
-│   │   └── processed/
 │   ├── notebooks/
-│   │   ├── 01_exploratory_data_analysis.ipynb
-│   │   ├── 02_data_preprocessing.ipynb
-│   │   ├── 03_model_development.ipynb
-│   │   └── 04_model_evaluation.ipynb
 │   ├── src/
-│   │   ├── __init__.py
-│   │   ├── data_loader.py
-│   │   ├── preprocessing.py
-│   │   ├── models.py
-│   │   └── evaluation.py
 │   └── reports/
-│       └── analysis_report.md
-└── [future-regression-projects]/
+├── student-performance-prediction/
+│   ├── README.md
+│   ├── data/
+│   ├── notebooks/
+│   ├── src/
+│   └── reports/
+├── car-price-prediction/
+│   ├── README.md
+│   ├── data/
+│   ├── notebooks/
+│   ├── src/
+│   └── reports/
+└── [future-projects]/
 ```
 
-## 🏠 Project 1: House Price Prediction
+## Projects Included
 
-**Status**: 🚀 In Progress
+### 1. House Price Prediction
+Predict house prices based on various features like rooms, bathrooms, square footage, location, and age.
 
-A classic regression project predicting house prices based on various features such as:
-- Number of rooms, bathrooms
-- Square footage
-- Location/neighborhood
-- Age of property
-- And more...
+**Methods**: Linear Regression, Polynomial Regression, Ridge, Lasso, Elastic Net, Feature Scaling, Cross-Validation
 
-**Methods Covered**:
-- ✅ Linear Regression
-- ✅ Multiple Linear Regression
-- ✅ Polynomial Regression
-- ✅ Ridge Regression (L2 Regularization)
-- ✅ Lasso Regression (L1 Regularization)
-- ✅ Elastic Net
-- ✅ Feature Scaling & Normalization
-- ✅ Train-Test Split & Cross-Validation
-- ✅ Model Evaluation Metrics
+**Status**: In Progress
 
-**Dataset**: Boston Housing / Kaggle House Prices / California Housing
+### 2. Student Performance Prediction
+Predict student exam scores based on study hours, attendance, and other factors.
 
-**Key Learnings**:
-- Data exploration and visualization
-- Handling missing values
-- Feature engineering and selection
-- Hyperparameter tuning
-- Model comparison and selection
+**Methods**: Simple Linear Regression, Correlation Analysis, Feature Engineering
+
+**Status**: Planned
+
+### 3. Car Price Prediction
+Predict car prices based on specifications like brand, model, year, mileage, and features.
+
+**Methods**: Multiple Regression, Categorical Encoding, Feature Engineering
+
+**Status**: Planned
+
+### 4. Stock Price Forecasting
+Forecast stock prices using historical data and time series techniques.
+
+**Methods**: Time Series Regression, Moving Averages, Trend Analysis
+
+**Status**: Planned
+
+### 5. Salary Prediction
+Predict employee salaries based on experience, education, skills, and department.
+
+**Methods**: Multiple Regression, Feature Interactions, Polynomial Regression
+
+**Status**: Planned
 
 ## 🛠️ Tech Stack
 
@@ -81,7 +87,7 @@ A classic regression project predicting house prices based on various features s
   - numpy (numerical computing)
   - scikit-learn (machine learning)
   - matplotlib & seaborn (visualization)
-  - jupyter (interactive notebooks)
+  - Jupyter (interactive notebooks)
 
 ## 📋 Requirements
 
@@ -96,7 +102,7 @@ seaborn>=0.11.0
 jupyter>=1.0.0
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 1. **Clone the repository**:
    ```bash
@@ -125,25 +131,19 @@ jupyter>=1.0.0
    jupyter notebook notebooks/01_exploratory_data_analysis.ipynb
    ```
 
-## 📊 Project Roadmap
+## Project Status
 
-- [ ] **House Price Prediction** (Current)
-  - [ ] Phase 1: Data Exploration & Analysis
-  - [ ] Phase 2: Data Preprocessing & Feature Engineering
-  - [ ] Phase 3: Model Development & Training
-  - [ ] Phase 4: Model Evaluation & Comparison
-  - [ ] Phase 5: Hyperparameter Tuning & Optimization
-
-- [ ] **Future Projects**:
-  - Stock Price Forecasting
-  - Student Performance Prediction
-  - Car Price Prediction
-  - Salary Prediction
-  - And more...
+| Project | Status | Methods Covered |
+|---------|--------|-----------------|
+| House Price Prediction | In Progress | Linear, Polynomial, Ridge, Lasso, Elastic Net |
+| Student Performance | Planned | Simple Linear, Correlation, Feature Engineering |
+| Car Price Prediction | Planned | Multiple Regression, Encoding, Features |
+| Stock Price Forecasting | Planned | Time Series, Moving Averages, Trends |
+| Salary Prediction | Planned | Interactions, Polynomial, Multiple Regression |
 
 ## 📈 Evaluation Metrics
 
-For each regression project, we'll evaluate models using:
+For each regression project, we evaluate models using:
 
 - **Mean Squared Error (MSE)**: Average of squared differences
 - **Root Mean Squared Error (RMSE)**: Square root of MSE
@@ -151,7 +151,7 @@ For each regression project, we'll evaluate models using:
 - **R-squared (R²)**: Proportion of variance explained
 - **Adjusted R²**: R² adjusted for number of features
 
-## 💡 Best Practices
+## Best Practices
 
 - Always split data into training and testing sets
 - Normalize/scale features when necessary
@@ -159,26 +159,45 @@ For each regression project, we'll evaluate models using:
 - Document your findings and insights
 - Compare multiple models before selecting the best one
 - Validate assumptions of linear regression
+- Each project has its own README with detailed instructions
 
-## 📝 Notes
+## 📝 Project Structure Convention
 
-- This is a learning-focused repository
-- All projects follow a consistent structure for easy navigation
-- Each project includes detailed notebooks and comments
-- Feel free to experiment and modify approaches
+Each project in this repository follows a consistent structure:
 
-## 🤝 Contributing
+```
+project-name/
+├── README.md                 # Project-specific documentation
+├── data/
+│   ├── raw/                 # Original dataset
+│   └── processed/           # Cleaned and processed data
+├── notebooks/
+│   ├── 01_exploratory_data_analysis.ipynb
+│   ├── 02_data_preprocessing.ipynb
+│   ├── 03_model_development.ipynb
+│   └── 04_model_evaluation.ipynb
+├── src/
+│   ├── __init__.py
+│   ├── data_loader.py
+│   ├── preprocessing.py
+│   ├── models.py
+│   └── evaluation.py
+└── reports/
+    └── analysis_report.md
+```
 
-This is a personal learning repository, but feel free to fork and adapt it for your own learning journey!
-
-## 📚 Resources
+## Resources
 
 - [Scikit-learn Documentation](https://scikit-learn.org/stable/)
 - [Pandas Documentation](https://pandas.pydata.org/)
 - [StatQuest with Josh Starmer](https://www.youtube.com/c/joshstarmer) - Great for understanding ML concepts
 - [Kaggle Competitions](https://www.kaggle.com/) - Real datasets and competitions
 
-## 📧 Contact
+## Contributing
+
+This is a personal learning repository. Feel free to fork and adapt it for your own learning journey!
+
+## Contact
 
 For questions or suggestions, feel free to reach out!
 
